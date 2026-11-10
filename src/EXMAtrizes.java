@@ -1,0 +1,38 @@
+
+import java.util.Scanner;
+
+public class EXMAtrizes {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+         int M,N;
+         System.out.print("Quantas linhas vai ter a matriz? ");
+         M = sc.nextInt();
+
+         System.out.print("Quantas colunas vai ter a matriz? ");
+         N = sc.nextInt();
+
+       int[][] Matriz = new int[M][N];
+
+       for (int i = 0; i < M; i++) {
+           for (int j = 0; j < N; j++) {
+               System.out.print("Elemento [ " + i +"," + j + "]:");
+               Matriz[i][j] = sc.nextInt();
+           }
+       }
+
+       System.out.println();
+       System.out.println("Matriz feita com os numeor digitados : ");
+       for (int i = 0; i < M; i++) {
+           for (int j = 0; j < N; j++) {
+               System.out.print(Matriz[i][j] + " ");
+           }
+           System.out.println();
+       }
+
+
+
+
+        sc.close();
+    }
+}
